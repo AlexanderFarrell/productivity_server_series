@@ -1,0 +1,43 @@
+body {
+    background-color: rgb(75, 75, 155);
+    color: white;
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-size: 20px;
+}
+
+header {
+    background-color: rgb(101, 101, 206);
+}
+
+nav, main, footer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: 0;
+    padding: 10px;
+    display: block;
+    transition: 0.2s;
+}
+
+nav > a:hover {
+    background-color: rgba(255, 255, 255, 0.178);
+}
+
+nav {
+    display: flex;
+}
+
+.stretch {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+}

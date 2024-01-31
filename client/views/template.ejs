@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <div class="stretch">&nbsp;</div>
+            <a href="/planner">Planner</a>
+            <a href="/wiki">Wiki</a>
+            <a href="/account">Account</a>
+        </nav>
+    </header>
+    <main>
+        <%- include(content); %>
+    </main>
+    <footer>
+        <p>Productivity Server 0.1</p>
+        <p>Copyright 2024 by Alexander Farrell</p>
+    </footer>
+</body>
+</html>

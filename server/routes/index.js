@@ -1,7 +1,8 @@
 import { Router } from "express";
+import { render } from "../core/template.js";
 
 export const index_router = Router()
 
 index_router.get('/', (req, res) => {
-    res.send("Hello")
+    render(req, res, 'index.ejs', 'Home')
 })
